@@ -1,5 +1,4 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
-
 // Copyright (c) 2015-2017 The PIVX developers 
 // Copyright (c) 2015-2017 The FSS developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -37,8 +36,8 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     QString titleText = tr("FSS Core");
     QString versionText = tr("v1.0 PINK GECKO");
     QString copyrightTextBtc = QChar(0xA9) + QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
-    QString copyrightTextFSS = QChar(0xA9) + QString(" 2014-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The FSS Core and PIVX developers"));
-    QString copyrightTextFSS = QChar(0xA9) + QString(" 2017-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The FSS developers"));
+    QString copyrightTextPIVX = QChar(0xA9) + QString(" 2014-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The FSS Core and PIVX developers"));
+    QString copyrightTextFSS = QChar(0xA9) + QString(" 2018-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The FSS developers"));
     QString titleAddText = networkStyle->getTitleAddText();
     QString font = QApplication::font().toString();
 
