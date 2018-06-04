@@ -1,0 +1,26 @@
+[Unit]
+Description=FSS's distributed currency daemon
+After=network.target
+
+[Service]
+User=fss
+Group=fss
+
+Type=forking
+PIDFile=/var/lib/fssd/fssd.pid
+
+ExecStart=/usr/bin/fssd -daemon -pid=/var/lib/fssd/fssd.pid \
+          -conf=/etc/fss/fss.conf -datadir=/var/lib/fssd
+
+ExecStop=-/usr/bin/fss-cli -conf=/etc/fss/fss.conf \
+         -datadir=/var/lib/fssd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
