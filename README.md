@@ -28,3 +28,9 @@ Fast Secure Spend
 	
 	Discord : https://discord.gg/gD6eEnH
 	
+	Exchange : https://graviex.net/markets/fssbtc
+	
+	Explorer : http://explorer.fssproject.com
+
+        
+	
