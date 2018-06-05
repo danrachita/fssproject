@@ -14,7 +14,7 @@ Fast Secure Spend
 *	Block 1 = pre-mine
 *	2 - 2,890 = 1 FSS (POW)
 *	2,891 - 11,525 = 2 FSS (POS/MN)
-*	11,526 - 500,000 = 30 FSS (POS/MN)
+*	11,526 - 500,000 = 40 FSS (POS/MN)
 *	500,001 - = 5 FSS (POS/MN)
 
 
